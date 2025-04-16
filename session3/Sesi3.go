@@ -1,15 +1,19 @@
-package main
+package session3
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
-func sesi3() {
-	fmt.Println("Materi Sesi 3: If Else")
+func profile(name string, favFoods ...string) {
+	mergefavfood := strings.Join(favFoods, ",")
 
-	nilai := 80
+	fmt.Println("Nama:", name)
+	fmt.Println("Makan:", mergefavfood)
 
-	if nilai >= 75 {
-		fmt.Println("Lulus")
-	} else {
-		fmt.Println("Tidak Lulus")
-	}
+}
+
+func Sesi3() {
+	// Pemanggilan fungsi dengan 1 parameter biasa dan beberapa variadic
+	profile("Airell", "Nasi Goreng", "Sate", "Bakso", "Mie Ayam")
 }
