@@ -1,16 +1,17 @@
 package main
 
 import (
-	"fmt"
+	//"fmt"
 	//"Golang-Session/session1" // import package
 	//"Golang-Session/session2"
-	"Golang-Session/session3"
+	//"Golang-Session/session3"
+	"Golang-Session/session4"
 	//"Golang-Session/session6"
 )
 
-func init() {
-	fmt.Println("Hallo dari function init")
-}
+//	func init() {
+//		fmt.Println("Hallo dari function init")
+//	}
 func main() {
 	//session1.Sesi1()
 	//session1.Sesi11()
@@ -25,6 +26,11 @@ func main() {
 	//session3.Sesi31()
 	//session3.Sesi32()
 	//session3.Sesi33()
-	session3.Sesi34()
+	//session3.Sesi34()
+	//session4.Sesi4()
+	//session4.Sesi41()
+	//session4.Sesi42()
+	//session4.Sesi43()
+	session4.Sesi44()
 	//session6.Webmain()
 }
