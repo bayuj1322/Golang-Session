@@ -25,8 +25,7 @@ func Sesi52() {
 	fmt.Print("Masukkan password: ")
 	fmt.Scanln(&password)
 
-	result, err := validPassword(password)
-	if err != nil {
+	if result, err := validPassword(password); err != nil {
 		//fmt.Println("Error:", err)
 		panic(err.Error())
 	} else {
