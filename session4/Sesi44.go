@@ -6,7 +6,7 @@ import (
 )
 
 // Fungsi untuk mencetak nama buah
-func printFruit(fruit string, index int, wg *sync.WaitGroup) {
+func printFruit(index int, fruit string, wg *sync.WaitGroup) {
 	defer wg.Done() // Memberi tahu bahwa goroutine ini sudah selesai
 
 	fmt.Printf("Buah ke-%d: %s\n", index+1, fruit)
@@ -22,7 +22,7 @@ func Sesi44() {
 	// Loop setiap buah, jalankan printFruit sebagai goroutine
 	for i, fruit := range fruits {
 		wg.Add(1) // Tambah counter goroutine yang harus ditunggu
-		go printFruit(fruit, i, &wg)
+		go printFruit(i, fruit, &wg)
 	}
 
 	// Tunggu semua goroutine selesai

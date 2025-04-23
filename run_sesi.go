@@ -5,7 +5,8 @@ import (
 	//"Golang-Session/session1" // import package
 	//"Golang-Session/session2"
 	//"Golang-Session/session3"
-	"Golang-Session/session4"
+	//"Golang-Session/session4"
+	"Golang-Session/session5"
 	//"Golang-Session/session6"
 )
 
@@ -31,6 +32,9 @@ func main() {
 	//session4.Sesi41()
 	//session4.Sesi42()
 	//session4.Sesi43()
-	session4.Sesi44()
+	//session4.Sesi44()
+	//session5.Sesi5()
+	//session5.Sesi51()
+	session5.Sesi52()
 	//session6.Webmain()
 }
